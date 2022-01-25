@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promedio</title>
+</head>
+<body>
+  <h1>Interes</h1>
+  <section>
+    <h2>Calcula el Interés Simple o Compuesto</h2>
+    <form>
+      <label for="TipoInteres">Seleccione el interés deseado : </label>
+      <input type="radio" name="tipoInteres" value="1" checked="checked">Simple</input>
+      <input type="radio" name="tipoInteres" value="0">Compuesto</input>
+      <input id="Capital" type="number" />
+      <input id="Interes" type="number" />
+      <input id="tiempo" type="number" />
+      <button type="button" onclick="calcularInteres()">
+        Calcula el interés
+      </button>
+      <button type="button" onclick="calcularPerimetroTriangulo()">
+        Calcular el perímetro
+      </button>
+      <p id="ResultP"></p>
+    </form>
+  </section>
+  <script src="./interes.js"></script>
+</body>
+</html>
+
+
