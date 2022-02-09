@@ -5,10 +5,61 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cálculo de intereses</title>
+  <link rel="stylesheet" href="./css/interes.css" />
 </head>
 <body>
-  <h1>Interes</h1>
-  <section>
+  <div class="header" >
+    <div class = "title">
+      Calculadora Intereses
+    </div>
+  </div>
+  <div class = "Container_principal_menu">
+    <div class = "principal_menu">
+      <form class="formulario_calculo">
+        <label class="tipo_interes" for="TipoInteres">Seleccione el interés deseado : </label>
+        <div>
+          <input class = "radio_button" type="radio" name="tipoInteres" value="1" checked="checked">
+            <span>Simple</span>  
+          </input>
+          <input class = "radio_button" type="radio" name="tipoInteres" value="0">
+            <span>Compuesto</span>
+          </input>
+        </div>
+        <div class="values">
+          <div class="values_container">
+            <p>Ingrese el Capital : </p>
+            <input id="Capital" type="number" />
+          </div>
+          <div class="values_container">
+            <p>Ingrese el Interés : </p>
+            <input id="Interes" type="number" />
+          </div>
+          <div class="values_container">
+            <p>Ingrese el Tiempo (en meses) : </p>
+            <input id="tiempo" type="number" />  
+          </div>
+          
+        </div>
+        <button type="button" onclick="calcularInteres()">
+          Calcula el interés
+        </button>
+        <p id="ResultP"></p>
+      </form>
+    </div>
+  </div>
+  
+  <div class = "footer">
+    <div class="container_footer">
+      <div class = "desarrollador">
+        <p class="title_developer">Página desarrollada por:</p>
+        <p class = "name_developer">Victor Cortés</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+<!--   <section>
     <h2>Calcula el Interés Simple o Compuesto</h2>
     <form>
       <label for="TipoInteres">Seleccione el interés deseado : </label>
@@ -20,14 +71,11 @@
       <button type="button" onclick="calcularInteres()">
         Calcula el interés
       </button>
-      <button type="button" onclick="calcularPerimetroTriangulo()">
-        Calcular el perímetro
-      </button>
       <p id="ResultP"></p>
     </form>
   </section>
   <script src="./interes.js"></script>
 </body>
 </html>
-
+ -->
 
