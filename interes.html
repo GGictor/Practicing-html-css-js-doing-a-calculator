@@ -17,7 +17,7 @@
     <div class = "principal_menu">
       <form class="formulario_calculo">
         <label class="tipo_interes" for="TipoInteres">Seleccione el interés deseado : </label>
-        <div>
+        <div class="container_buttons">
           <input class = "radio_button" type="radio" name="tipoInteres" value="1" checked="checked">
             <span>Simple</span>  
           </input>
@@ -27,23 +27,23 @@
         </div>
         <div class="values">
           <div class="values_container">
-            <p>Ingrese el Capital : </p>
+            <p class="instructions_input">Ingrese el Capital :  </p>
             <input id="Capital" type="number" />
           </div>
           <div class="values_container">
-            <p>Ingrese el Interés : </p>
+            <p class="instructions_input">Ingrese el Interés :  </p>
             <input id="Interes" type="number" />
           </div>
           <div class="values_container">
-            <p>Ingrese el Tiempo (en meses) : </p>
+            <p class="instructions_input">Ingrese el Tiempo (en meses) :  </p>
             <input id="tiempo" type="number" />  
           </div>
           
         </div>
-        <button type="button" onclick="calcularInteres()">
+        <button type="button" onclick="calculateInterest()">
           Calcula el interés
         </button>
-        <p id="ResultP"></p>
+        <p class="result" id="ResultP"></p>
       </form>
     </div>
   </div>
@@ -56,6 +56,7 @@
       </div>
     </div>
   </div>
+  <script src="./interes.js"></script>
 </body>
 </html>
 

@@ -1,7 +1,7 @@
 
 
 
-function calcularInteres(){    
+function calculateInterest(){    
     const tipoInteres =  document.getElementsByName('tipoInteres');
     //console.log("El valor de tipoInteres es de: " + tipoInteres);
     let validate;
