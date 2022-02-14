@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/cuadrado.css" />
+  <title>Figuras geométricas | Curso Práctico de JavaScript en Platzi</title>
+</head>
+
+<body>
+    <div class="header" >
+        <div class = "title">
+            Square Calculator
+        </div>
+        <div class ="Home">
+            <img class="home_image" alt="Home" src="https://cdn-icons-png.flaticon.com/512/263/263115.png"
+            width=150" height="70">
+            <div class="overlay_home">
+                <a class="home_option" href="./index.html">Home</a>
+            </div>
+    
+        </div>
+    </div>
+    <div class = "Container_principal_menu">
+        <div class = "principal_menu">
+            <form class="formulario_calculo">
+                <label class="tipo_interes" for="TipoInteres">Calculus for a Square: </label>
+                <div class="values">
+                    <div class="values_container">
+                        <p class="instructions_input">Input the value of the side of the Square:  </p>
+                        <input id="InputCuadrado" type="number" />
+                    </div>
+                    <button type="button" onclick="calculateSquarePerimeter()">
+                        Calcute the perimeter of the square
+                    </button>
+                    <button type="button" onclick="calculateSquareArea()">
+                        Calculate the area of the square
+                    </button>
+                    <p class="result" id="ResultP"></p>
+                </div>        
+            </form>
+        </div>
+    </div>
+
+    <div class = "footer">
+      <div class="container_footer">
+        <div class = "desarrollador">
+          <p class="title_developer">Página desarrollada por:</p>
+          <p class = "name_developer">Victor Cortés</p>
+        </div>
+      </div>
+    </div>
+    <script src="./figuras.js"></script>
+  </body>
+  </html>
+  
+
+
+
+
+
+
+<!-- 
+    <section>
+        <h2>Calcula el área y perímetro de un cuadrado</h2>
+        <form>
+          <label for="InputCuadrado">
+            Escribe cuánto mide cada lado de tu cuadrado:
+          </label>
+          <input id="InputCuadrado" type="number" />
+          <button type="button" onclick="calcularPerimetroCuadrado()">
+            Calcular el perímetro
+          </button>
+          <button type="button" onclick="calcularAreaCuadrado()">
+            Calcular el área
+          </button>
+        </form>
+      </section>
+    
+      <script src="./figuras.js"></script>
+    </body>
+    </html> -->
