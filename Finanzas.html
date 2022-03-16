@@ -24,32 +24,32 @@
   <div class = "Container_principal_menu">
     <div class = "principal_menu">
       <form class="formulario_calculo">
-        <label class="tipo_interes" for="TipoInteres">Seleccione el interés deseado : </label>
+        <label class="tipo_interes" for="TipeInterest">Select the desired interest: </label>
         <div class="container_buttons">
-          <input class = "radio_button" type="radio" name="tipoInteres" value="1" checked="checked">
+          <input class = "radio_button" type="radio" name="tipeInterest" value="1" checked="checked">
             <span>Simple</span>  
           </input>
-          <input class = "radio_button" type="radio" name="tipoInteres" value="0">
-            <span>Compuesto</span>
+          <input class = "radio_button" type="radio" name="tipeInterest" value="0">
+            <span>Compound</span>
           </input>
         </div>
         <div class="values">
           <div class="values_container">
-            <p class="instructions_input">Ingrese el Capital :  </p>
+            <p class="instructions_input">Enter capital : </p>
             <input id="Capital" type="number" />
           </div>
           <div class="values_container">
-            <p class="instructions_input">Ingrese el Interés :  </p>
+            <p class="instructions_input">Enter interest : </p>
             <input id="Interes" type="number" />
           </div>
           <div class="values_container">
-            <p class="instructions_input">Ingrese el Tiempo (en meses) :  </p>
+            <p class="instructions_input">Enter the time (In months) : </p>
             <input id="tiempo" type="number" />  
           </div>
           
         </div>
         <button type="button" onclick="calculateInterest()">
-          Calcula el interés
+          Calculate the interest
         </button>
         <p class="result" id="ResultP"></p>
       </form>
@@ -58,13 +58,13 @@
   
   <div class = "footer">
     <div class="container_footer">
-      <div class = "desarrollador">
+      <div class = "developer">
         <p class="title_developer">Página desarrollada por:</p>
         <p class = "name_developer">Victor Cortés</p>
       </div>
     </div>
   </div>
-  <script src="./interes.js"></script>
+  <script src="./interests.js"></script>
 </body>
 </html>
 

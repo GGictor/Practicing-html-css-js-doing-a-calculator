@@ -49,7 +49,7 @@ body{
 
 }
 
-.button_figuras{
+.button_figures{
     position: relative;
     width: 75%;
     display: flex;
@@ -80,11 +80,11 @@ body{
     background-color: transparent;
   }
   
-.button_figuras:hover .overlay_figure {
+.button_figures:hover .overlay_figure {
     opacity: 1;
   }
   
-.figuras_option {
+.figures_option {
     padding: 3rem 3rem 3rem 3rem;
     border-radius: 1rem;
     box-shadow: 3px 3px 3px white, -3px -3px 3px white, 
@@ -119,17 +119,17 @@ body{
     margin: auto;
     
 }
-.desarrollador{
+.developer{
     text-align: center;
     display: flex;
     flex-direction: column;
 
 }
-.desarrollador .title_developer {
+.developer .title_developer {
     font-size: 4rem;
     color: white;
 }
-.desarrollador .name_developer {
+.developer .name_developer {
     font-size: 3.2rem;
     color: white;
 }

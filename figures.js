@@ -1,20 +1,3 @@
-//////////
-//Square//
-//////////
-
-
-function squarePerimeter(squareSide){
-    const squarePerimeter = squareSide*4;
-    //console.log("The perimeter of the square is: "+ squarePerimeter);    
-    return squarePerimeter;
-}
-
-function squareArea(squareSide){
-    const squareArea = squareSide*squareSide;
-    //console.log("The area of the square is: "+ squareArea);   
-    return squareArea; 
-}
-
 
 ////////////
 //Triangle//
@@ -136,68 +119,69 @@ function calcuteTriangleArea(){
 }
 
 
-/* function verifiedIsosceles(leg1Triangle, leg2Triangle, baseTriangle){
-    if(leg1Triangle == leg2Triangle && leg2Triangle != baseTriangle){
-        return true;   
-    }
-    else{
-        return false;
-    }
-}
-
-function calcularAlturaTrianguloIscoceles(){
-    const inputCateto1 = document.getElementById("InputTrianguloCateto1")
-    const inputCateto2 = document.getElementById("InputTrianguloCateto2")
-    const inputBase = document.getElementById("InputTrianguloBase")
-    const iscocelesState = verificarIscoceles(parseInt(inputCateto1.value), parseInt(inputCateto2.value), parseInt(inputBase.value))
-    if(iscocelesState == true){
-        alert("El triangulo es iscoleles :)");
-        const ResultadoAltura = Math.sqrt(parseInt(inputCateto1.value)**2 - ((parseInt(inputBase.value)**2)/4));
-        console.log("La altura del triangulo iscoceles es de: " + ResultadoAltura)
-        return ResultadoAltura
-    }
-    else {
-        console.log("El triangulo no es Iscoceles :(")
-        alert("El triangulo no es Iscoceles :(");
-        return "El triangulo no es iscoceles :(";
-    }
-} */
-
-
-
-
-
 //////////
 //Circle//
 //////////
 
 
-
-function perimetroCirculo(radioCirculo){
+function circlePerimeter(circleRadio){
     const PI = Math.PI;
-    const perimetroCirculo = radioCirculo * 2 *PI;
-    console.log("El perimetro del circulo es de : "+ perimetroCirculo);    
+    const circlePerimeter = circleRadio * 2 *PI;
+    //console.log("The perimeter of the circle is: "+ circlePerimeter);    
+    return circlePerimeter;
 }
 
-function areaCirculo(radioCirculo){
+function circleArea(circleRadio){
     const PI = Math.PI;
-    const areaCirculo = radioCirculo ** 2 *PI;
-    console.log("El area del circulo es de : "+ areaCirculo);    
+    const circleArea = circleRadio ** 2 *PI;
+    //console.log("The area of the circle is: "+ circleArea);    
+    return circleArea;
+}
+
+// Aquí interactuamos con el HTML
+function calculateCirclePerimeter() {
+    const input = document.getElementById("InputCircle");
+    const resultP = document.getElementById("ResultP");
+    const value = input.value;
+    const perimeter = circlePerimeter(parseInt(value));
+    resultP.innerText = "The perimeter is: " + perimeter;
+}
+function calculateCircleArea() {
+    const input = document.getElementById("InputCircle");
+    const resultP = document.getElementById("ResultP");
+    const value = input.value;
+    const area = circleArea(parseInt(value));
+    resultP.innerText = "The area is: " + area;
+}
+
+//////////
+//Square//
+//////////
+
+function squarePerimeter(squareSide){
+    const squarePerimeter = squareSide*4;
+    //console.log("The perimeter of the square is: "+ squarePerimeter);    
+    return squarePerimeter;
+}
+
+function squareArea(squareSide){
+    const squareArea = squareSide*squareSide;
+    //console.log("The area of the square is: "+ squareArea);   
+    return squareArea; 
 }
 
 // Aquí interactuamos con el HTML
 function calculateSquarePerimeter() {
-    const input = document.getElementById("InputCuadrado");
+    const input = document.getElementById("InputSquare");
     const resultP = document.getElementById("ResultP");
     const value = input.value;
     const perimetro = squarePerimeter(parseInt(value));
-    resultP.innerText = "The perimeter is: " + perimetro;
+    resultP.innerText = "The perimeter is : " + perimetro;
 }
 function calculateSquareArea() {
-    const input = document.getElementById("InputCuadrado");
+    const input = document.getElementById("InputSquare");
     const resultP = document.getElementById("ResultP");
     const value = input.value;
     const area = squareArea(parseInt(value));
-    resultP.innerText = "The area is: " + area;
+    resultP.innerText = "The area is : " + area;
 }
-

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinterest Calculator</title>
+  <link rel="stylesheet" href="./css/interest.css" />
+</head>
+<body>
+  <div class="header" >
+    <div class = "title">
+      Interest Calculator
+    </div>
+    <div class ="Home">
+      <img class="home_image" alt="Home" src="https://cdn-icons-png.flaticon.com/512/263/263115.png"
+      width=150" height="70">
+      <div class="overlay_home">
+          <a class="home_option" href="./index.html">Home</a>
+      </div>
+  </div>
+</div>
+  </div>
+  <div class = "Container_principal_menu">
+    <div class = "principal_menu">
+      <form class="calculus_form">
+        <label class="tipe_interest" for="TipeInterest">Select the desired interest : </label>
+        <div class="container_buttons">
+          <input class = "radio_button" type="radio" name="tipoInterest" value="1" checked="checked">
+            <span>Simple</span>  
+          </input>
+          <input class = "radio_button" type="radio" name="tipoInterest" value="0">
+            <span>Compound</span>
+          </input>
+        </div>
+        <div class="values">
+          <div class="values_container">
+            <p class="instructions_input">Enter capital :  </p>
+            <input id="Capital" type="number" />
+          </div>
+          <div class="values_container">
+            <p class="instructions_input">Enter interest :  </p>
+            <input id="Interest" type="number" />
+          </div>
+          <div class="values_container">
+            <p class="instructions_input">Enter time (In months) :  </p>
+            <input id="Time" type="number" />  
+          </div>
+          
+        </div>
+        <button type="button" onclick="calculateInterest()">
+          Calculate Interest
+        </button>
+        <p class="result" id="ResultP"></p>
+      </form>
+    </div>
+  </div>
+  
+  <div class = "footer">
+    <div class="container_footer">
+      <div class = "developer">
+        <p class="title_developer">Page developed by:</p>
+        <p class = "name_developer">Victor Cortés</p>
+      </div>
+    </div>
+  </div>
+  <script src="./interests.js"></script>
+</body>
+</html>

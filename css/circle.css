@@ -53,7 +53,7 @@ body{
     3px -3px 3px white, -3px 3px 3px white;
     justify-content: center;
 }
-.tipo_interes{
+.tipe_interest{
     font-size: 3rem;
     color: white;
 }
@@ -65,7 +65,7 @@ body{
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
-.formulario_calculo {
+.form_calculus {
     width: 100%;
     height: 100%;
     display: flex;
@@ -100,24 +100,24 @@ body{
     margin: auto;
     
 }
-.desarrollador{
+.developer{
     text-align: center;
     display: flex;
     flex-direction: column;
 
 }
-.desarrollador .title_developer {
+.developer .title_developer {
     font-size: 3rem;
     color: white;
 }
-.desarrollador .name_developer {
+.developer .name_developer {
     font-size: 2.5rem;
     color: white;
 }
 .result{
     color: white;
     font-size: 2rem;
-    padding: 1.2rem 0rem;
+    padding: 2rem 0rem;
 }
 
 .Home:hover .overlay_home {

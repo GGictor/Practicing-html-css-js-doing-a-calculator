@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/circle.css" />
+  <title>Geometric figures</title>
+</head>
+
+<body>
+    <div class="header" >
+        <div class = "title">
+            Circle Calculator
+        </div>
+        <div class ="Home">
+            <img class="home_image" alt="Home" src="https://cdn-icons-png.flaticon.com/512/263/263115.png"
+            width=150" height="70">
+            <div class="overlay_home">
+                <a class="home_option" href="./index.html">Home</a>
+            </div>
+    
+        </div>
+    </div>
+    <div class = "Container_principal_menu">
+        <div class = "principal_menu">
+            <form class="form_calculus">
+                <label class="tipe_interest" for="TipeInterest">Calculus for a circle: </label>
+                <div class="values">
+                    <div class="values_container">
+                        <p class="instructions_input">Input the radious of the circle:  </p>
+                        <input id="InputCircle" type="number" />
+                    </div>
+                    <button type="button" onclick="calculateCirclePerimeter()">
+                        Calcute the perimeter of the circle
+                    </button>
+                    <button type="button" onclick="calculateCircleArea()">
+                        Calculate the area of the circle
+                    </button>
+                    <p class="result" id="ResultP"></p>
+                </div>        
+            </form>
+        </div>
+    </div>
+
+    <div class = "footer">
+      <div class="container_footer">
+        <div class = "developer">
+          <p class="title_developer">Page developed by:</p>
+          <p class = "name_developer">Victor Cortés</p>
+        </div>
+      </div>
+    </div>
+    <script src="./figures.js"></script>
+  </body>
+  </html>

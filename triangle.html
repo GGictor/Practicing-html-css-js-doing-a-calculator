@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/triangulo.css" />
-  <title>Figuras geométricas | Curso Práctico de JavaScript en Platzi</title>
+  <link rel="stylesheet" href="./css/triangle.css" />
+  <title>Geometric figures</title>
 </head>
 <body>
     <div class="header" >
@@ -23,7 +23,7 @@
     </div>
     <div class = "Container_principal_menu">
         <div class = "principal_menu">
-            <form class="formulario_calculo">
+            <form class="calculus_form">
                 <label class="tipo_interes" for="TipoInteres">Calculation of a Triangle: </label>
                 <div class="values">
                     <div class="values_container">
@@ -37,19 +37,19 @@
                             <input id="InputTrianguloBase" type="number" />
                         </p>
                     </div>
-                    <button type="button" onclick="calledVerifiedTriangleByLeg()">
+                    <button class="resultButton" type="button" onclick="calledVerifiedTriangleByLeg()">
                         Verified the type of the triangle by the leg
                     </button>
-                    <button type="button" onclick="calledVerifiedTriangleByAngle()">
+                    <button class="resultButton" type="button" onclick="calledVerifiedTriangleByAngle()">
                         Verified the type of the triangle by the angle
                     </button>
-                    <button type="button" onclick="resultAngleOfTriangle()">
+                    <button class="resultButton" type="button" onclick="resultAngleOfTriangle()">
                         Calculate the angles of the triangle
                     </button>
-                    <button type="button" onclick="calculateTrianglePerimeter()">
+                    <button class="resultButton" type="button" onclick="calculateTrianglePerimeter()">
                         Calcute the perimeter of the triangle
                     </button>
-                    <button type="button" onclick="calcuteTriangleArea()">
+                    <button class="resultButton" type="button" onclick="calcuteTriangleArea()">
                         Calculate the area of the triangle
                     </button>
                     <p class="result" id="ResultTypeLeg"></p>
@@ -64,13 +64,13 @@
 
     <div class = "footer">
       <div class="container_footer">
-        <div class = "desarrollador">
+        <div class = "developer">
           <p class="title_developer">Page developed by:</p>
           <p class = "name_developer">Victor Cortés</p>
         </div>
       </div>
     </div>
-    <script src="figuras.js"></script>
+    <script src="figures.js"></script>
   </body>
   </html>
   

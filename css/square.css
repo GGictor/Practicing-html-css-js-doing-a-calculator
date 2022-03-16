@@ -20,27 +20,27 @@ body{
     height: 8rem;
     padding: 2rem;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .title{
     text-align: center;
-    font-size: 6rem;
+    font-size: 4.5rem;
     color: white;
     display: flex;
-    margin-left: 38rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 14rem;
 }
 .Home{
     position: relative;
-    margin-left: 16rem;
-    margin-right: 8rem;
 }
 .Container_principal_menu{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 4rem;
+    padding: 4rem 4rem 3rem 4rem;
 }
 .principal_menu{
     height: 54rem;
@@ -53,46 +53,74 @@ body{
     3px -3px 3px white, -3px 3px 3px white;
     justify-content: center;
 }
-
-.inner_principal_menu{
-
+.tipe_interest{
+    font-size: 3rem;
+    color: white;
 }
-
-.button_figuras{
-    position: relative;
-    width: 75%;
+.radio_button ~ span{
+    font-size: 2rem;
+    color: white;
+}
+.container_buttons{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.form_calculus {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.values_container{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 3.5rem;
-    margin-bottom: 3.5rem;
+    padding: 0.5rem 0rem;
+}
+.instructions_input{
+    color: white;
+    font-size: 1.5rem;
+    padding: 0rem 0.5rem;
+    margin: 0.3rem;
+}
 
-  }
+.values{
+    display: flex;
+    flex-direction: column;
+}
 
-.referential_image {
-    display: block;
-    width: 8rem;
-    height: 8rem;
-  }
-  
-.overlay_figure {
-    position: absolute;
-    top: 0;
+.footer {
+    padding: 10px 10px 0px 10px;
     bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
     width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: transparent;
-  }
-  
+    background: transparent;
+    display: flex;
+}
+.container_footer {
+    margin: auto;
+    
+}
+.developer{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.developer .title_developer {
+    font-size: 3rem;
+    color: white;
+}
+.developer .name_developer {
+    font-size: 2.5rem;
+    color: white;
+}
+.result{
+    color: white;
+    font-size: 2rem;
+    padding: 2rem 0rem;
+}
+
 .Home:hover .overlay_home {
-    opacity: 1;
-  }
-.button_figuras:hover .overlay_figure {
     opacity: 1;
   }
 
@@ -129,55 +157,3 @@ body{
     text-align: center;
     width: 100%;
   }
-
-
-
-.figures_option {
-    padding: 3rem 3rem 3rem 3rem;
-    border-radius: 1rem;
-    box-shadow: 3px 3px 3px white, -3px -3px 3px white, 
-    3px -3px 3px white, -3px 3px 3px white;
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 100%;
-  }
-
-.container_principal{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-.footer {
-    position: fixed;
-    padding: 10px 10px 0px 10px;
-    bottom: 0;
-    width: 100%;
-    background: transparent;
-}
-.container_footer {
-    margin: auto;
-    
-}
-.developer{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-
-}
-.developer .title_developer {
-    font-size: 4rem;
-    color: white;
-}
-.developer .name_developer {
-    font-size: 3.2rem;
-    color: white;
-}
